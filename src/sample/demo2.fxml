@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.demo2.Controller">
+    <children>
+        <Label contentDisplay="CENTER" layoutX="200.0" layoutY="26.0" prefHeight="17.0" prefWidth="268.0" text="Danh sach Sinh vien">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtName" layoutX="54.0" layoutY="94.0" prefHeight="27.0" prefWidth="181.0" promptText="Ten SV" />
+        <TextField fx:id="txtAge" layoutX="256.0" layoutY="94.0" prefHeight="27.0" prefWidth="83.0" promptText="Tuoi" />
+        <TextField fx:id="txtMark" layoutX="358.0" layoutY="94.0" prefHeight="27.0" prefWidth="83.0" promptText="Diem thi" />
+        <Button onAction="#input" layoutX="464.0" layoutY="94.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="77.0" text="Submit" />
+        <TextArea fx:id="txtRs" layoutX="53.0" layoutY="179.0" prefHeight="200.0" prefWidth="490.0" promptText="Danh sach" style="-fx-border-color: orange;" />
+        <Text fx:id="txtValidate" disable="true" fill="#ee0a0a" layoutX="54.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-color: red;" wrappingWidth="387.22900390625" />
+        <Button onAction="#sort" fx:id="btnSort" layoutX="53.0" layoutY="141.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="131.0" text="Thap den cao" />
+    </children>
+</Pane>
